@@ -7,6 +7,14 @@ python-versions = "*"
 version = "0.7.12"
 
 [[package]]
+category = "main"
+description = "Snake/Camel case converter with Django and Djnago REST framework integration"
+name = "any-case"
+optional = false
+python-versions = ">=3.6,<4.0"
+version = "0.1.6"
+
+[[package]]
 category = "dev"
 description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
 name = "appdirs"
@@ -424,7 +432,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "0.8.0"
 
 [[package]]
-category = "dev"
+category = "main"
 description = "Python Build Reasonableness"
 name = "pbr"
 optional = false
@@ -760,7 +768,7 @@ lint = ["flake8", "mypy", "docutils-stubs"]
 test = ["pytest"]
 
 [[package]]
-category = "dev"
+category = "main"
 description = "Manage dynamic plugins for Python applications"
 name = "stevedore"
 optional = false
@@ -788,7 +796,7 @@ docs = ["sphinx", "twisted"]
 tests = ["coverage", "freezegun (>=0.2.8)", "pretend", "pytest (>=3.3.0)", "simplejson", "python-rapidjson", "pytest-asyncio"]
 
 [[package]]
-category = "dev"
+category = "main"
 description = "Python Library for Tom's Obvious, Minimal Language"
 name = "toml"
 optional = false
@@ -909,13 +917,17 @@ python-versions = "*"
 version = "0.2.5"
 
 [metadata]
-content-hash = "6e36e308f5224a2a7892fd3d1b7d8df80f71299d1dec8d317d30e853fe91279c"
+content-hash = "812472db881244f2b2ba98dfed5148d184374847e4d63b5471ef823065522f51"
 python-versions = "^3.8"
 
 [metadata.files]
 alabaster = [
     {file = "alabaster-0.7.12-py2.py3-none-any.whl", hash = "sha256:446438bdcca0e05bd45ea2de1668c1d9b032e1a9154c2c259092d77031ddd359"},
     {file = "alabaster-0.7.12.tar.gz", hash = "sha256:a661d72d58e6ea8a57f7a86e37d86716863ee5e92788398526d58b26a4e4dc02"},
+]
+any-case = [
+    {file = "any_case-0.1.6-py3-none-any.whl", hash = "sha256:22b097591beb2bb35b88a3eef138cc2b90caae421c033e2dacc7c2020ee47bc2"},
+    {file = "any_case-0.1.6.tar.gz", hash = "sha256:51cdb5bf12518653c223f08c3347adc2d07a5c4fd64704fccdb3e0ffed9b4c62"},
 ]
 appdirs = [
     {file = "appdirs-1.4.4-py2.py3-none-any.whl", hash = "sha256:a841dacd6b99318a741b166adb07e19ee71a274450e68237b4650ca1055ab128"},
