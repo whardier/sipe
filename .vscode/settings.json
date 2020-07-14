@@ -1,0 +1,26 @@
+{
+    "python.pythonPath": ".venv/bin/python3.8",
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        72,
+        88
+    ],
+    "files.exclude": {
+        "**/*.egg-info": true,
+        "**/.mypy_cache": true,
+        "**/__pycache__": true,
+        "**/.venv": true
+    },
+    "python.disableInstallationCheck": true,
+    "python.formatting.provider": "black",
+    "python.linting.banditEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.renderWhitespace": "all",
+    "editor.find.autoFindInSelection": "multiline"
+}
+

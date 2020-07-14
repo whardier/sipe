@@ -1,0 +1,12 @@
+[flake8]
+count = True
+statistics = True
+doctests = True
+exclude = .git,.tox,__pycache__,.eggs,build,tests
+ignore = E501, W503
+#ignore = E203, E266, E501, W503, F401
+max-line-length = 88
+disable-noqa = False
+hang-closing = False
+max-complexity = 10
+

@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "sipe"
+version = "2020.07.01a0"
+description = "Python asynchronous SIP proxy"
+authors = ["Shane R. Spencer <305301+whardier@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.scripts]
+sipe = "sipe.console:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dpkt = "^1.9.2"
+pydantic = {version = "^1.6", extras = ["email", "dotenv"]}
+typer = {version = "^0.3.0", extras = ["all"]}
+ursine = "^0.3.1"
+structlog = "^20.1.0"
+inflect = "^4.1.0"
+humanize = "^2.5.0"
+
+[tool.poetry.dev-dependencies]
+autoflake = "^1.3.1"
+bandit = "^1.6.2"
+black = "^19.10b0"
+coverage = "^5.2"
+doc8 = "^0.8.1"
+flake8 = "^3.8.3"
+hypothesis = "^5.19.2"
+mock = "^4.0.2"
+mypy = "^0.782"
+pytest-cov = "^2.10.0"
+pytest = "^5.4.3"
+rope = "^0.17.0"
+setuptools = "^49.2.0"
+sphinx = "^3.1.2"
+tox = "^3.17.0"
+isort = "<5"
+
+[tool.black]
+target-version = ['py38']
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
