@@ -6,8 +6,8 @@
 
 # Author: Shane R. Spencer <spencersr@gmail.com>
 
-# Sipe Project: Relative
-from .log import gen_log
+# Sipe Project: Absolute
+from sipe.log import gen_log
 
 console_log = gen_log.bind()
 

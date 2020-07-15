@@ -8,6 +8,7 @@
     "files.exclude": {
         "**/*.egg-info": true,
         "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
         "**/__pycache__": true,
         "**/.venv": true
     },
@@ -23,4 +24,3 @@
     "editor.renderWhitespace": "all",
     "editor.find.autoFindInSelection": "multiline"
 }
-

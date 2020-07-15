@@ -14,8 +14,9 @@ poetry add -D flake8@latest
 poetry add -D hypothesis@latest
 poetry add -D mock@latest
 poetry add -D mypy@latest
-poetry add -D pytest-cov@latest
 poetry add -D pytest@latest
+poetry add -D pytest-asyncio@latest
+poetry add -D pytest-cov@latest
 poetry add -D rope@latest
 poetry add -D setuptools@latest
 poetry add -D sphinx@latest

@@ -11,13 +11,15 @@ sipe = "sipe.console:main"
 [tool.poetry.dependencies]
 python = "^3.8"
 any-case = "^0.1.6"
+construct = "^2.10.56"
 dpkt = "^1.9.2"
 humanize = "^2.5.0"
 inflect = "^4.1.0"
 pydantic = {version = "^1.6", extras = ["email", "dotenv"]}
 stevedore = "^3.1.0"
 structlog = "^20.1.0"
-toml = "^0.10.1"
+toml-sort = "^0.18.0"
+tomlkit = "^0.6.0"
 typer = {version = "^0.3.0", extras = ["all"]}
 ursine = "^0.3.1"
 
@@ -38,10 +40,34 @@ rope = "^0.17.0"
 setuptools = "^49.2.0"
 sphinx = "^3.1.2"
 tox = "^3.17.0"
+pytest-asyncio = "^0.14.0"
 
 [tool.black]
 target-version = ['py38']
+
+[tool.pytest.ini_options]
+addopts = "--cov=sipe --doctest-modules"
+
+[tool.isort]
+line_length = 88
+indent = "    "
+include_trailing_comma = true
+multi_line_output = 3
+balanced_wrapping = true
+length_sort = true
+force_single_line = false
+import_heading_stdlib = "Standard Library"
+import_heading_thirdparty = "Third Party"
+import_heading_firstparty = "Sipe Project: Absolute"
+import_heading_pydantic = "Pydantic: https://github.com/samuelcolvin/pydantic/"
+import_heading_structlog = "Structlog: https://github.com/hynek/structlog"
+import_heading_localfolder = "Sipe Project: Relative"
+known_pydantic = "pydantic"
+known_structlog = "structlog"
+sections = "FUTURE,STDLIB,TYPING,PYDANTIC,STRUCTLOG,PHONENUMBERS,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
 

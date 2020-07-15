@@ -1,0 +1,6 @@
+[run]
+branch = true
+source = sipe
+
+[report]
+ignore_errors = true
