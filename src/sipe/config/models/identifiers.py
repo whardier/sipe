@@ -7,7 +7,7 @@
 # Author: Shane R. Spencer <spencersr@gmail.com>
 
 # Standard Library
-from typing import List, Pattern, Optional
+from typing import List, Pattern
 from ipaddress import IPv4Network, IPv6Network
 
 # Pydantic: https://github.com/samuelcolvin/pydantic/
@@ -20,8 +20,6 @@ class IdentifierHeaderModel(BaseModel):
     ...     IdentifierHeaderModel()
     ... except:
     ...     False
-    ... else:
-    ...     True
     ...
     False
     """

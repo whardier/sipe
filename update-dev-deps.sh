@@ -16,7 +16,11 @@ poetry add -D mock@latest
 poetry add -D mypy@latest
 poetry add -D pytest@latest
 poetry add -D pytest-asyncio@latest
+poetry add -D pytest-bandit@latest
+poetry add -D pytest-black@latest
 poetry add -D pytest-cov@latest
+poetry add -D pytest-flake8@latest
+poetry add -D pytest-mongodb@latest
 poetry add -D rope@latest
 poetry add -D setuptools@latest
 poetry add -D sphinx@latest

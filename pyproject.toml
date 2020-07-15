@@ -41,6 +41,10 @@ setuptools = "^49.2.0"
 sphinx = "^3.1.2"
 tox = "^3.17.0"
 pytest-asyncio = "^0.14.0"
+pytest-black = "^0.3.10"
+pytest-flake8 = "^1.0.6"
+pytest-bandit = "^0.5.2"
+pytest-mongodb = "^2.2.0"
 
 [tool.black]
 target-version = ['py38']
